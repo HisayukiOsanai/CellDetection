@@ -40,46 +40,6 @@ hold on
 I_original = I;
 
 
-%get(gcf,'Position')
-% axis off
-% title('')
-% set(gcf, 'color', 'none'); 
-% % pos = [ 2240         474         359         347];
-% % set(gcf,'Position',pos);
-% % dir_save = 'D:\experiments\240409 Miari\code\code_new\MethodPaper_figs\Images';
-% s = strcat('fig_DG_original');
-% ss = fullfile(dir_save, s);
-% print(fig, ss, '-djpeg')
-% % set(fig,'Renderer', 'Painters');
-% print(fig, ss, '-dmeta')
-
-
-% xlim([1350 1750])
-% ylim([300 950])
-% % get(gcf,'Position')
-% axis off
-% title('')
-% set(gcf, 'color', 'none'); 
-% pos = [ 39   394   423   572];
-% set(gcf,'Position',pos);
-% dir_save = 'D:\experiments\240409 Miari\code\code_new\MethodPaper_figs\Images';
-% s = strcat('fig_DG_original2');
-% ss = fullfile(dir_save, s);
-% print(gcf, ss, '-djpeg')
-
-
-% xlim([550 1050])
-% ylim([500 1000])
-% % get(gcf,'Position')
-% axis off
-% title('')
-% set(gcf, 'color', 'none'); 
-% pos = [ 39   394   423   572];
-% set(gcf,'Position',pos);
-% dir_save = 'D:\experiments\240409 Miari\code\code_new\MethodPaper_figs\Images';
-% s = strcat('fig_DG_original2');
-% ss = fullfile(dir_save, s);
-% print(gcf, ss, '-djpeg')
 %% median filter
 I = medfilt2(I_original,[MedFiltPx MedFiltPx]);
 figure
@@ -97,20 +57,6 @@ hold on
 % I_preadj = medfilt2(I_preadj,[MedFiltPx MedFiltPx]);
 
 
-% xlim([1350 1750])
-% ylim([300 950])
-% % get(gcf,'Position')
-% axis off
-% title('')
-% set(gcf, 'color', 'none'); 
-% pos = [ 39   394   423   572];
-% set(gcf,'Position',pos);
-% dir_save = 'D:\experiments\240409 Miari\code\code_new\MethodPaper_figs\Images';
-% s = strcat('fig_DG_med');
-% ss = fullfile(dir_save, s);
-% print(gcf, ss, '-djpeg')
-% set(fig,'Renderer', 'Painters');
-% print(fig, ss, '-dmeta')
 
 %% Otsu's method to get putative-background
 
